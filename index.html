@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">    
+<link rel="icon" 
+      type="image/png" 
+      href="https://upload.wikimedia.org/wikipedia/commons/a/a7/Chiquita_Brands_Logo_2018.jpg" />
+<style>
+body{
+    background-color: lightslategray;
+}
+
+
+
+.mainHeading{
+    background-color: aqua;
+    width: 30%;
+    margin: auto;
+    height: auto;
+    border: 3px solid #73AD21;
+    padding: 40px;
+    font-size: 1vw;
+    font-family: monospace;
+    margin-top: 20px;
+}
+.theSteps{
+    text-align: center;
+    background-color: lightseagreen;
+    border: 3px solid black;
+    margin: auto;
+    width: 80%;
+    margin-top: 40px;
+    
+}
+.stepInfo{
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.thePictures{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.buttonClass {
+    
+    float: right;
+    margin-right: 10%; 
+    cursor: pointer;
+    border: 1px solid black;
+}
+#button:hover{
+    cursor: pointer;
+}
+#button {
+    
+    font-size: 25px;
+    border: 6px;
+    color: black;
+    background-color: rgb(240, 210, 235)
+    
+    
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}@media only screen and(max-width: 400px){
+    .mainHeading{ text-align: left;
+        margin-left: 0%;
+
+}}
+
+</style>
+</head>
+<body>
+    <div class="buttonClass"><button onClick = "playSong()" id = "button" >Play music</button>
+        <audio id = "myAudio" loop="loop"  src = "https://upload.wikimedia.org/wikipedia/commons/c/ca/Oh_mia_bela_madunina_%28cans%C3%B2n_milanesa%29.ogg">
+        </audio></div>
+
+    <div class="mainHeading"><h1>How to Make a Webpage: The Webpage</h1></div>
+<br>
+
+<div class="theSteps"><h2>Step 1: First you need a text editor:</h2></div>
+    <br>
+    <p class = "stepInfo" style="text-align: center;">A text editor is a application where you can run code. Most of them look sort of like this: </p>
+    <img class = "thePictures" src="https://upload.wikimedia.org/wikipedia/commons/5/59/Notepad%2B%2B_interface.jpg" height="400" width = "600">
+    <div class="theSteps"><h2>Step 2: Choose a programming language</h2></div>
+    <div class="stepInfo" style="text-align: center;"><p>You need be fluent in HTML, CSS, Javascript, JQuery, Dothraki, Hieroglyphics, and Klingon. <br>Once you have learned all that you will look like this: </p></div>
+    <img class = "thePictures" src="https://imgur.com/EeUvUeH.png" height="300" width="500">
+    <div class="theSteps"><h2>Step 3: Now its time to cash out!!</h2></div>
+    <div class ='stepInfo' style="text-align: center;"><p>Move to San Jose and live in a van in the Wendy's parking lot. You are secretly a billionaire but <br>you don't tell anyone because you made the money from hacking Elon Musk's roomba. </p></div>
+    <img class="thePictures" src="https://imgur.com/54XkXSW.png" height = "300" width = "500">
+    <div class="theSteps" style="text-align:center"><h2>Step 4: Give up on life.</h2></div>
+    <div class="stepInfo" style="text-align: center"><p>Human beings don't stay alive for the sake of survival, but rather for the sake of things that bring purpose.<br>Being the greatest programmer that ever lived, you have lost your only purpose in life which was to do everything <br>you could to validate your feelings that you are better than everyone else. The time has come to find a new goal.
+     </p></div>
+    <img class="thePictures" src="https://imgur.com/xeQKCWY.png" height = "300" width = "500">
+
+<script>
+    
+        function playSong(){
+        document.getElementById("myAudio").play(); 
+        }
+ 
+
+   
+
+   
+
+
+</script>
+</body>
+</html>
+
